@@ -95,9 +95,9 @@ for key_P in dic_P.keys():
             num_co = len(dic_co)
             percentage = round(max(dic_co.values())/num*100)
             
-            ## Add double quotation marks to product name if there is a comma (,) .
+            ## Add single quotation marks to product name if there is a comma (,) .
             if ',' in key_P:
-                key_P_p = '\"'+ key_P +'\"'    # Product key for print.
+                key_P_p = ''+ key_P +''    # Product key for print.
             else:
                 key_P_p = key_P
             
