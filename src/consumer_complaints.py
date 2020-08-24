@@ -24,7 +24,7 @@ Product = [] # Product name.
 Company = [] # Company name.
 Case = []    # Case includes information about (year, product and company) of each complaint.
 
-filename = 'complaints.csv'
+filename = './input/complaints.csv'
 with open(filename, newline='') as f:
     
     reader = csv.reader(f)
@@ -102,6 +102,6 @@ for key_P in dic_P.keys():
                 key_P_p = key_P
             
             ##  Now, write to 'report.csv’
-            with open('report.csv','a', newline = '') as f:
+            with open('./output/report.csv','a', newline = '') as f:
                 writer = csv.writer(f)
                 writer.writerow([key_P_p, key_Y, num, num_co, percentage])
